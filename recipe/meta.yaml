@@ -1,4 +1,4 @@
-{% set version = "2.0.2" %}
+{% set version = "2.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/NACHO_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/NACHO/NACHO_{{ version }}.tar.gz
-  sha256: 90401751a677e6e6e101e88454fd77129dbc930704951c35d9ad5486723221f8
+  sha256: bcd1eaff7d25469a8046543ed723eaa11f2c001e4fe2da60594ce3f00dff8dc2
 
 build:
   merge_build_host: true  # [win]
