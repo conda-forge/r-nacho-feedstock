@@ -1,6 +1,5 @@
 {% set version = "2.0.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-nacho
@@ -13,8 +12,7 @@ source:
   sha256: 31cd8a2c9d11ea064634ce0aa6ceae7a0ef7cf7f76aafa7235f4fba2b4bc3eec
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
