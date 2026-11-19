@@ -1,4 +1,4 @@
-{% set version = "2.0.8" %}
+{% set version = "3.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/NACHO_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/NACHO/NACHO_{{ version }}.tar.gz
-  sha256: e7025eaa3d771ed5244565576f240f9ff16e3a45eaf598c7a8ba8d6aa3156f8c
+  sha256: f61165a7a24e681298fec3c96b5c6b682b2a8897d950e8adf5a5910357bf54c6
 
 build:
   number: 0
